@@ -31,7 +31,7 @@ public class PlayerTest : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Gravity();
+        Gravity();  //ジャンプ中に落下速度を変更する
         Vector3 movement = new Vector3(move.x, 0.0f, move.y);
         rb.AddForce(movement * speed);
 
