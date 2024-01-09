@@ -29,7 +29,6 @@ public class GamepadExample : MonoBehaviour
     void OnGUI()
     {
         if (Gamepad.current == null) return;
-
         GUILayout.Label($"leftStick: {Gamepad.current.leftStick.ReadValue()}");
         GUILayout.Label($"rightStick: {Gamepad.current.rightStick.ReadValue()}");
         GUILayout.Label($"dpad: {Gamepad.current.dpad.ReadValue()}");
